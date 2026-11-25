@@ -1,10 +1,12 @@
+import { publicImage } from "./assets";
+
 export const workHighlights = [
   {
     category: "Healthcare",
     title: "Bringing eye care within reach",
     description:
       "A community eye-care initiative brought local residents together for free check-ups and surgery support.",
-    image: "/images/instagram-eye-camp.jpg",
+    image: publicImage("instagram-eye-camp.jpg"),
     alt: "Community eye-care initiative with Raju Navghare",
     layout: "feature",
   },
@@ -13,7 +15,7 @@ export const workHighlights = [
     title: "More opportunity for young learners",
     description:
       "A district-level Navodaya scholarship examination puts learning and opportunity in focus.",
-    image: "/images/scholarship-exam.jpeg",
+    image: publicImage("scholarship-exam.jpeg"),
     alt: "Students taking part in a scholarship examination",
     layout: "standard",
   },
@@ -22,7 +24,7 @@ export const workHighlights = [
     title: "Making space for every community",
     description:
       "A social-justice department meeting in Vasmat brought community members together for a conversation about inclusion and opportunity.",
-    image: "/images/instagram-meeting.webp",
+    image: publicImage("instagram-meeting.webp"),
     alt: "Raju Navghare meeting community members at a public event",
     layout: "standard",
   },
@@ -31,7 +33,7 @@ export const workHighlights = [
     title: "Listening where it matters",
     description:
       "At a Janata Darbar in Jawla Bazar, residents raised local concerns directly and discussed practical next steps.",
-    image: "/images/instagram-janata-darbar.jpg",
+    image: publicImage("instagram-janata-darbar.jpg"),
     alt: "Raju Navghare listening to residents at a public hearing",
     layout: "standard",
   },

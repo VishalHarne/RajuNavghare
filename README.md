@@ -20,4 +20,6 @@ npm run build
 npm run preview
 ```
 
+Pushing to `main` builds and deploys the site to GitHub Pages using `.github/workflows/deploy.yml`.
+
 Original website photography and publicly available photos from the official Instagram account are stored in `public/images/`. Source image files are kept unchanged; layout and cropping are handled in CSS.

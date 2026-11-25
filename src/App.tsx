@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { publicImage } from "./assets";
 import { journey, socialLinks, workHighlights } from "./content";
 
 const navigation = [
@@ -23,16 +24,16 @@ function App() {
     <>
       <section className="opening-poster" aria-labelledby="poster-title">
         <div className="poster-backdrop" aria-hidden="true">
-          <img src="/images/instagram-meeting.webp" alt="" />
+          <img src={publicImage("instagram-meeting.webp")} alt="" />
         </div>
         <a className="poster-brand" href="#home" aria-label="Raju Navghare — enter website">
-          <img src="/images/mla-logo.png" alt="" />
+          <img src={publicImage("mla-logo.png")} alt="" />
           <span>RAJU NAVGHARE<small>WITH THE PEOPLE · FOR BASMAT</small></span>
         </a>
         <span className="poster-role">MEMBER OF LEGISLATIVE ASSEMBLY <i /> BASMAT</span>
         <img
           className="poster-portrait"
-          src="/images/profile-rajubhaiya.png"
+          src={publicImage("profile-rajubhaiya.png")}
           alt="Portrait of Raju Navghare"
           fetchPriority="high"
         />
@@ -57,7 +58,7 @@ function App() {
           aria-label="Raju Navghare — home"
           onClick={() => setMenuOpen(false)}
         >
-          <img src="/images/mla-logo.png" alt="" />
+          <img src={publicImage("mla-logo.png")} alt="" />
           <span>
             <strong>Raju Navghare</strong>
             <small>WITH THE PEOPLE · FOR BASMAT</small>
@@ -88,7 +89,7 @@ function App() {
       <main>
         <section className="hero page-shell" id="home">
           <div className="hero-backdrop" aria-hidden="true">
-            <img src="/images/hero-procession-background.png" alt="" />
+            <img src={publicImage("hero-procession-background.png")} alt="" />
           </div>
           <div className="hero-copy">
             <p className="eyebrow"><span /> PEOPLE FIRST · PUBLIC SERVICE</p>
@@ -109,7 +110,7 @@ function App() {
           </div>
           <figure className="hero-visual">
             <img
-              src="/images/hero-stage-speaker.png"
+              src={publicImage("hero-stage-speaker.png")}
               alt="Raju Navghare addressing an audience at a public event"
               fetchPriority="high"
             />
